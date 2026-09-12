@@ -1,0 +1,73 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(120deg, 
+#5f2c82, 
+#49a09d);
+    color: white;
+    overflow-x: hidden;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('/images/trolley_bg.jpg') no-repeat center center/cover;
+    animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+    from { background-position: 0 0; }
+    to { background-position: -1000px 0; }
+}
+
+.logo img {
+    width: 150px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: 
+#00c896;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: 
+#00e0a8;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
