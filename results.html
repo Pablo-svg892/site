@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Basket — Bonus Basket</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<div class="phone">
+
+  <header class="topbar">
+    <a href="index.html" class="back">←</a>
+    <span class="brand">Your Basket</span>
+  </header>
+
+  <main class="screen">
+
+    <div class="store-card">
+      <span class="store-label">Cheapest store found</span>
+      <h2 id="store-name">—</h2>
+      <span id="store-distance" class="store-distance"></span>
+    </div>
+
+    <ul id="item-list" class="item-list"></ul>
+
+    <div class="totals">
+      <div class="totals-row">
+        <span>Your budget</span>
+        <span id="sum-budget">R0</span>
+      </div>
+      <div class="totals-row">
+        <span>Basket total</span>
+        <span id="sum-total">R0</span>
+      </div>
+      <div class="totals-row savings">
+        <span>You saved</span>
+        <span id="sum-savings">R0</span>
+      </div>
+    </div>
+
+    <div id="treat-card" class="treat-card" hidden>
+      <span class="treat-label">Treat yourself 🍬</span>
+      <p id="treat-text"></p>
+    </div>
+
+  </main>
+
+  <footer class="tabbar">
+    <div class="tab">
+      <span class="icon">🛒</span>
+      <span>Basket</span>
+    </div>
+    <div class="tab active">
+      <span class="icon">📍</span>
+      <span>Stores</span>
+    </div>
+    <div class="tab">
+      <span class="icon">👤</span>
+      <span>Profile</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

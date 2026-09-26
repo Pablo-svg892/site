@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonus Basket — Stop overpaying for groceries</title>
+<link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+
+<div class="phone">
+
+  <header class="topbar">
+    <span class="dot"></span>
+    <span class="brand">Bonus Basket</span>
+  </header>
+
+  <main class="screen">
+    <h1>What's on your list today?</h1>
+    <p class="sub">Type your groceries, tell us your budget, and we'll find the cheapest place to buy them near you.</p>
+
+    <form id="basket-form">
+      <label for="items">Shopping list</label>
+      <textarea id="items" rows="6" placeholder="e.g.&#10;milk&#10;bread&#10;eggs&#10;rice&#10;chicken breast" required></textarea>
+
+      <label for="budget">Your budget</label>
+      <div class="budget-input">
+        <span>R</span>
+        <input type="number" id="budget" placeholder="500" min="0" step="1" required>
+      </div>
+
+      <button type="submit">Find my cheapest basket</button>
+    </form>
+  </main>
+
+  <footer class="tabbar">
+    <div class="tab active">
+      <span class="icon">🛒</span>
+      <span>Basket</span>
+    </div>
+    <div class="tab">
+      <span class="icon">📍</span>
+      <span>Stores</span>
+    </div>
+    <div class="tab">
+      <span class="icon">👤</span>
+      <span>Profile</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
